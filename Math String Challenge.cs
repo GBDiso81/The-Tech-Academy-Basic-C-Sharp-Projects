@@ -17,10 +17,12 @@ namespace Math_With_Strings
             //Console.WriteLine(name + number);
             //Console.ReadLine();
 
-            string  name = "Glen Mark birthdate is ";
+            string name = "Glen Mark birthdate is ";
             int num = 5191981;
             Console.WriteLine(name + num);
             Console.ReadLine();
+
+
 
 
         }
