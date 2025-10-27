@@ -13,8 +13,8 @@ namespace Switch_Challenge
             Console.ReadLine();
             Console.WriteLine("Enter your vehicle plate ending number:");
             int endingnum = Convert.ToInt32(Console.ReadLine());
-           
-            
+
+
             switch (endingnum)
             {
                 case 1:
