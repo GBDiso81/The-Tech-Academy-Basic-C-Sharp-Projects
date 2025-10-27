@@ -8,6 +8,7 @@ namespace Switch_Challenge
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Weekly Vehicle Coding");
+            Console.WriteLine("Press any key to continue...");
             Console.ReadLine();
             Console.WriteLine("Enter your vehicle plate ending number:");
             int endingnum = Convert.ToInt32(Console.ReadLine());
