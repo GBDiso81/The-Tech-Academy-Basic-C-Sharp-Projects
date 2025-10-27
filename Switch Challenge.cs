@@ -6,6 +6,7 @@ namespace Switch_Challenge
     class Program
     {
         static void Main(string[] args)
+        
         {
             Console.WriteLine("Welcome to Weekly Vehicle Coding");
             Console.WriteLine("Press any key to continue...");
@@ -55,7 +56,11 @@ namespace Switch_Challenge
 
             Console.ReadLine();
 
-            
+
         }
     }
 }
+            
+            
+
+        
