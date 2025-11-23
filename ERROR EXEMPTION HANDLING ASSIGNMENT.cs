@@ -51,7 +51,6 @@ class Program
             }
         }
             Console.WriteLine("The program has emerged from the try/catch block and will now exit.");
-            
             Console.WriteLine("Press any key to exit program...");
             Console.ReadKey();
 
