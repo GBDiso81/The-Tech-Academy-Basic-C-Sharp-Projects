@@ -45,3 +45,22 @@ namespace mathOperation2
         }
     }
 }
+
+
+
+using System;
+
+
+namespace mathOperation2
+{
+    public class mathOps2
+    {
+        // Method takes two integers. num2 is optional with a default value of 1.
+        public int MultiplyNumbers(int num1, int num2 = 1)
+        {
+            // Perform a math operation (multiplication) and return the result.
+            return (num1 - num2) * 100;
+
+        }
+    }
+}
