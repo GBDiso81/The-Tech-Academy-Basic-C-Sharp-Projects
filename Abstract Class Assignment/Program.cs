@@ -7,8 +7,8 @@ namespace AbstractClassAssignment
     {
         static void Main(string[] args)
         {
-            // 5.Instantiate an Employee object with firstName “Sample” and lastName “Student”. 
-            Employee employee = new Employee();
+            // Instantiate an Employee object with firstName “Sample” and lastName “Student”. 
+            Person employee = new Employee();
 
             
             employee.FirstName = "Sample";
