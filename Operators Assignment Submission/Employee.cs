@@ -19,9 +19,25 @@ namespace OperatorsAssignment
         // Overload in pairs the operator "==" with operator "!==" .
         public static bool operator !=(Employee employee1, Employee employee2)
         {
-           return !(employee1 == employee2);
+            return !(employee1 == employee2);
         }
 
-       
+        // Override the standard Equals method for consistency
+        public override bool Equals(object obj)
+        {
+            // Check if the object is an Employee and then use the overloaded ==
+            if (obj is Employee other)
+            {
+                return this == other;
+            }
+            return false;
+        }
+
+        // Override GetHashCode to avoid compiler warnings and ensure consistent behavior
+        public override int GetHashCode()
+        {
+            return EmployeeId.GetHashCode();
+
+        }
     }
 }
