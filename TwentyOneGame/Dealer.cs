@@ -18,8 +18,9 @@ namespace PuttingAllTogether
             Hand.Add(Deck.Cards.First());
             string card = string.Format(Deck.Cards.First().ToString() + "\n");
             Console.WriteLine(card);
-            using (StreamWriter file = new StreamWriter(@"C:\Users\gbdis\Logs\log.text", true))
+            using (StreamWriter file = new StreamWriter(@"C:\Users\gbdis\Logs\log.txt", true))
             {
+                file.WriteLine(DateTime.Now);
                 file.WriteLine(card);
             }
             Deck.Cards.RemoveAt(0);
