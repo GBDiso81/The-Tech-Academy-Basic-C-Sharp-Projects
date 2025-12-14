@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 
 
-namespace PuttingAllTogether
+namespace Casino
 {
     public class Dealer
     {

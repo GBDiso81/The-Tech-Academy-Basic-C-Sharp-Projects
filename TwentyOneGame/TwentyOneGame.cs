@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Casino.Interfaces;
 
-namespace PuttingAllTogether
+namespace Casino.TwentyOne
 {
     public class TwentyOneGame : Game, IWalkAway
     {
@@ -21,7 +22,7 @@ namespace PuttingAllTogether
             Dealer.Stay = false;
             Dealer.Deck = new Deck();
             Dealer.Deck.Shuffle();
-            Console.WriteLine("Place your Bet!");
+            Console.WriteLine("\nPlace your Bet!");
 
             foreach (Player player in Players)
             {
@@ -35,7 +36,7 @@ namespace PuttingAllTogether
             }
             for (int i = 0; i < 2; i++)
             {
-                Console.WriteLine("Dealing...");
+                Console.WriteLine("\nDealing...");
                 foreach (Player player in Players)
                 {
                     Console.WriteLine("{0}: ", player.Name);
@@ -76,7 +77,7 @@ namespace PuttingAllTogether
                     {
                         Console.Write("{0} ", card.ToString());
                     }
-                    Console.WriteLine("\n\nHit or Stay?");
+                    Console.WriteLine("Hit or Stay?");
                     string answer = Console.ReadLine().ToLower();
                     if (answer == "stay")
                     {
