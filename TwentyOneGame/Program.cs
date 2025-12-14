@@ -14,8 +14,19 @@ namespace PuttingAllTogether
 
             Console.WriteLine("Welcome to GBdiso Casino! Pls input your Name...");
             string playerName = Console.ReadLine();
-            Console.WriteLine("Enter your Starting Balance...");
-            int bank = Convert.ToInt32(Console.ReadLine());
+
+            bool validAnswer = false;
+            int bank = 0;
+            while (!validAnswer)
+            {
+                Console.WriteLine("And how much money did you have?");
+                validAnswer = int.TryParse(Console.ReadLine(), out bank);
+                if (!validAnswer) Console.WriteLine("Pls enter valid number only, No Decimal...");
+            }
+
+            //Console.WriteLine("Enter your Starting Balance...");
+
+            //int bank = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Join now {0} ?", playerName);
             string answer = Console.ReadLine().ToLower();
             if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya")
@@ -32,7 +43,16 @@ namespace PuttingAllTogether
                 player.isActivePlaying = true;
                 while (player.isActivePlaying && player.Balance > 0) 
                 {
-                    game.Play();
+                    try
+                    {
+                        game.Play();
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("An error occured. Please contact System Administrator.");
+                        Console.ReadLine();
+                        return;
+                    }
                 }
                 game -= player;
                 Console.WriteLine("Thank you for playing!");
