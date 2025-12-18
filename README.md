@@ -4,7 +4,7 @@
   i have saved the activities and assignment learned for every part of module here.
 
 Pojects included are:
-•	Car Insurance (check my project here:  
+•	Car Insurance (check my project here:  https://github.com/GBDiso81/ASP.NET-MVC-Entity-Framework-Assignment )
   
 
 •	Student Dbase (check my project here :  https://github.com/GBDiso81/CODE-FIRST-STUDENT-DBASE)
